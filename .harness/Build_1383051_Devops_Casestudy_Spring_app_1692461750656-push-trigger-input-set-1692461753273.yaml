@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_1383051_Devops_Casestudy_Spring_app_1692461750656-push-trigger-input-set
+  identifier: Build_1383051_Devops_Casestudy_Spring_app_1692461750656pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: CISprigApp
+  pipeline:
+    identifier: Build_1383051_Devops_Casestudy_Spring_app_1692461750656
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
