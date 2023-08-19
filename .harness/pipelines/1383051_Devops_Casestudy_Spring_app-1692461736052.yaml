@@ -25,6 +25,18 @@ pipeline:
                     image: alpine
                     shell: Sh
                     command: echo "Welcome to Harness CI"
+              - step:
+                  type: GitClone
+                  name: GitClone_1
+                  identifier: GitClone_1
+                  spec:
+                    connectorRef: account.Github_OAuth_1692456884886
+                    repoName: 1383051_Devops_Casestudy_Spring_app
+                    build:
+                      type: branch
+                      spec:
+                        branch: master
+                  description: Cloning git branch
   properties:
     ci:
       codebase:
